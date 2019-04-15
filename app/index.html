@@ -1,0 +1,72 @@
+﻿<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- CSS (load bootstrap) -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/united/bootstrap.css">
+    <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.css">
+	<link rel="icon" href="https://omuservices.omu.edu.tr/app/favicon.png">	
+    <style>
+        .navbar {
+            border-radius: 0;
+        }
+    </style>
+</head>
+
+<!-- apply our angular app to our site -->
+<body ng-app="routerApp">
+
+    <!-- NAVIGATION -->
+    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+        <div class="container">
+            <a href="./" class="navbar-brand">OMUServices</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" ng-if="$root.isAdmin" ui-sref="users">Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ng-if="$root.isAdmin" ui-sref="services">Services</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" ng-if="$root.isAdmin" ui-sref="records" ui-sref-opts="{reload: true}">Records</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" ng-if="$root.isAdmin" ui-sref="logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+            
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+
+        <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+        <div ui-view></div>
+
+    </div>
+
+    <!-- JS (load angular, ui-router, and our custom js file) -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+    <script src="js/angular-jwt.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.js"></script>
+	
+	<script src="app.js"></script>
+	<script src="controllers/loginController.js"></script>
+	<script src="controllers/userController.js"></script>
+	<script src="controllers/serviceController.js"></script>
+	<script src="controllers/recordController.js"></script>
+	<script src="controllers/logoutController.js"></script>
+	<script src="services/recordService.js"></script>
+  
+</body>
+</html>

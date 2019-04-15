@@ -1,0 +1,51 @@
+﻿<div class="bs-docs-section"><!--ng-controller="myLoggingCtrl"-->
+    <div class="row">
+        <div class="col-lg-6 offset-lg-1">
+            <div class="card border-primary">
+                <div class="card-body">
+                    <blockquote class="card-blockquote">
+                        <div class="bs-component">
+                            <div class="form-group">
+                                <fieldset>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <label class="col-form-label" for="inputDefault">Email: </label>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <input class="form-control" type="text" ng-model="Users.email">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                            <div class="form-group">
+                                <fieldset>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <label class="col-form-label" for="inputDefault">Password: </label>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <input class="form-control" type="password" ng-model="Users.password">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                            <input class="btn btn-primary" type="button" name="send" value="Send Data" ng-click="login(Users)" />
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card text-white bg-primary">
+                <div class="card-body">
+                    <blockquote class="card-blockquote">
+                        <p></p>
+                        <footer>{{ msg }} <cite title="Source Title">{{ status }}</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

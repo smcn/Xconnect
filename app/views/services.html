@@ -1,0 +1,180 @@
+﻿<div class="bs-docs-section">
+    <div class="row">
+        <div class="col-lg-12">
+		
+			<div class="bs-component" ng-if="msg">
+              <div class="alert alert-dismissible alert-warning">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <p class="mb-0"> {{ msg }}, {{ status }}, <a href=".#/login" class="alert-link"> Login Page </a></p>
+              </div>
+            </div>
+		
+            <div class="page-header">
+                <h4 id="tables" class="text-primary">Services</h4>
+            </div>
+            <div class="bs-component">
+                <div class="row">
+					<div class="col-lg-1 text-primary"> Id </div>
+                    <div class="col-lg-2 text-primary"> Name </div>
+                    <div class="col-lg-2 text-primary"> Account </div>
+					<div class="col-lg-2 text-primary"> Account2 </div>
+					<div class="col-lg-2 text-primary"> Description </div>
+                    <div class="col-lg-2 text-primary"> Updated </div>              
+					<div class="col-lg-1 text-primary"></div>
+                    
+                </div>
+                <div ng-repeat="item in services">
+                    <div class="row text-warning">
+						<div class="col-lg-1"> {{ item.id }} </div>
+						<div class="col-lg-2" ><button class="btn btn-outline-primary btn-sm" ng-click="getServiceRecords(item.name)"> {{ item.name }} </button></div>
+                        <div class="col-lg-2"> {{ item.account }} </div>
+						<div class="col-lg-2"> {{ item.account2 }} </div>
+						<div class="col-lg-2"> {{ item.description }} </div>
+                        <div class="col-lg-2"> {{ item.updated_at }} </div>             
+                        <div class="col-lg-1">
+                            <button class="btn btn-outline-primary btn-sm" ng-hide="isEditForm" ng-click="isEditForm=true;">Edit</button>
+                        </div>
+
+                    </div>
+
+                    <div class="card border-primary card-body" ng-show="isEditForm">
+                        <div class="card-body">
+                            <blockquote class="card-blockquote">
+								<div class="row">
+                                    <div class="col-lg-6">
+                                        <label>Id</label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input ng-model="item.id" readonly="readonly"/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label>Name</label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input ng-model="item.name" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label>Account</label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input ng-model="item.account" />
+                                    </div>
+                                </div>
+								<div class="row">
+                                    <div class="col-lg-6">
+                                        <label>Password</label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input ng-model="item.password" />
+                                    </div>
+                                </div>
+								<div class="row">
+                                    <div class="col-lg-6">
+                                        <label>Account2 (Yöksisin bazı servisler için Üniversite kullanıcı adı)</label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input ng-model="item.account2" />
+                                    </div>
+                                </div>
+								<div class="row">
+                                    <div class="col-lg-6">
+                                        <label>Password2 (Yöksisin bazı servisler için Üniversite şifre)</label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input ng-model="item.password2" />
+                                    </div>
+                                </div>
+								<div class="row">
+                                    <div class="col-lg-6">
+                                        <label>Description</label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input ng-model="item.description" />
+                                    </div>
+                                </div>					
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <button class="btn btn-outline-primary btn-sm" ng-click="isEditForm=false;updateService(item)">Update</button>
+										<button class="btn btn-outline-danger btn-sm" ng-click="isEditForm=false;deleteService(item.id, $index)">Delete</button>
+                                        <button class="btn btn-outline-success btn-sm"ng-click="isEditForm=false;">Cancel</button>
+                                    </div>
+                                </div>
+                            </blockquote>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-primary card-body" ng-show="isAddForm">
+                    <div class="card-body">
+                        <blockquote class="card-blockquote">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <label>Name</label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input ng-model="newService.name" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <label>Account</label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input ng-model="newService.account" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <label>Password</label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input ng-model="newService.password" />
+                                </div>
+                            </div>
+							<div class="row">
+                                <div class="col-lg-6">
+                                    <label>Account2</label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input ng-model="newService.account2" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <label>Password2</label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input ng-model="newService.password2" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <label>Description</label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input ng-model="newService.description" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <button class="btn btn-outline-primary btn-sm" ng-click="addService()">Add</button>
+                                    <button class="btn btn-outline-success btn-sm" ng-click="isAddForm=false;">Cancel</button>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+
+                </div>
+                <div ng-hide="isAddForm">
+                    <button class="btn btn-outline-primary btn-sm" ng-click="isAddForm=true;">Add</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,176 @@
+﻿<div class="bs-docs-section">
+    <div class="row">
+        <div class="col-lg-12">
+		
+			<div class="bs-component" ng-if="msg">
+              <div class="alert alert-dismissible alert-warning">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <p class="mb-0"> {{ msg }}, {{ status }}, <a href=".#/login" class="alert-link"> Login Page </a></p>
+              </div>
+            </div>
+		
+            <div class="page-header">
+                <h4 id="tables" class="text-primary">Users</h4>
+            </div>
+            <div class="bs-component">
+                <div class="row">
+					<div class="col-lg-1 text-primary"> Id </div>
+                    <div class="col-lg-2 text-primary"> Name </div>
+                    <div class="col-lg-2 text-primary"> Email </div>
+					<div class="col-lg-2 text-primary"> Roles </div>
+					<!--div class="col-lg-2 text-primary"> Created </div-->
+					<div class="col-lg-1 text-primary"> Active </div>
+                    <div class="col-lg-2 text-primary"> Updated </div>              
+					<div class="col-lg-1 text-primary"></div>
+                    
+                </div>
+                <div ng-repeat="item in users">
+                    <div class="row text-warning">
+						<div class="col-lg-1" ><button class="btn btn-outline-primary btn-sm" ng-click="getUserRecords(item.id)"> {{ item.id }} </button></div>
+                        <div class="col-lg-2"> {{ item.name }} </div>
+                        <div class="col-lg-2"> {{ item.email }} </div>
+						<div class="col-lg-2"> {{ item.role }} </div>
+						<!--div class="col-lg-2"> {{ item.created_at }} </div-->
+						<div class="col-lg-1"> {{ item.active }} </div>
+                        <div class="col-lg-2"> {{ item.updated_at }} </div>             
+                        <div class="col-lg-1">
+                            <button class="btn btn-outline-primary btn-sm" ng-hide="isEditForm" ng-click="isEditForm=true;">Edit</button>
+                        </div>
+
+                    </div>
+
+                    <div class="card border-primary card-body" ng-show="isEditForm">
+                        <div class="card-body">
+                            <blockquote class="card-blockquote">
+								<div class="row">
+                                    <div class="col-lg-6">
+                                        <label>Id</label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input ng-model="item.id" readonly="readonly"/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label>Name</label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input ng-model="item.name" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label>Email</label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input ng-model="item.email" />
+                                    </div>
+                                </div>
+								<div class="row">
+                                    <div class="col-lg-6">
+                                        <label>Password</label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input ng-model="item.password" type="password"/>
+                                    </div>
+                                </div>
+								<div class="row">
+                                    <div class="col-lg-6">
+                                        <label>TCKimlikNO</label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input ng-model="item.tckimlikno" />
+                                    </div>
+                                </div>
+								<div class="row">
+                                    <div class="col-lg-6">
+                                        <label>Role</label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input ng-model="item.role" />
+                                    </div>
+                                </div>
+								<div class="row">
+                                    <div class="col-lg-6">
+                                        <label>Active</label>
+                                    </div>
+                                    <div class="col-lg-6">
+										<input type="radio" value="1" ng-model="item.active" ng-checked="{{item.active == 1}}"/>true<br />
+										<input type="radio" value="0" ng-model="item.active" ng-checked="{{item.active == 0}}"/>false<br />
+                                    </div>
+                                </div>
+								
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <button class="btn btn-outline-primary" ng-click="isEditForm=false;updateUser(item)">Update</button>
+										<button class="btn btn-outline-danger" ng-click="isEditForm=false;deleteUser(item.id, $index)">Delete</button>
+                                        <button class="btn btn-outline-success" ng-click="isEditForm=false;">Cancel</button>
+                                    </div>
+                                </div>
+                            </blockquote>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-primary card-body" ng-show="isAddForm">
+                    <div class="card-body">
+                        <blockquote class="card-blockquote">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <label>Name</label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input ng-model="newUser.name" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <label>Email</label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input ng-model="newUser.email" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <label>Password</label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input ng-model="newUser.password" />
+                                </div>
+                            </div>
+							<div class="row">
+                                    <div class="col-lg-6">
+                                        <label>TCKimlikNO</label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input ng-model="newUser.tckimlikno" />
+                                    </div>
+                                </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <label>Role</label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input ng-model="newUser.role" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <button class="btn btn-outline-primary btn-sm" ng-click="addUser()">Add</button>
+                                    <button class="btn btn-outline-success btn-sm" ng-click="isAddForm=false;">Cancel</button>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+
+                </div>
+                <div ng-hide="isAddForm">
+                    <button class="btn btn-outline-primary btn-sm" ng-click="isAddForm=true;">Add</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
