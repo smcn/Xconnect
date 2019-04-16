@@ -1,0 +1,660 @@
+# Webalizer V2.23-08 Incremental Data - 04/15/2019 16:11:15
+2019 4 15 16 11 15
+30738 5972 3 241 21 5 135422560 28465 33 0
+1 45 20054 1 15
+185 136 17228786 1 185 2
+148 51 41764979 1 148 3
+4452 300 32692203 1 4261 2
+903 772 3628007 2 434 3
+14 12 45520 1 8 1
+0 0 0 0 0 0
+0 0 0 0 0 0
+1331 1135 7606279 2 667 4
+1729 1559 7269252 1 1263 3
+410 378 1449369 2 274 3
+857 833 7948657 2 851 6
+104 96 3243942 2 84 4
+0 0 0 0 0 0
+0 0 0 0 0 0
+20605 700 12545566 1 20290 2
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+133 98 6867250 96
+20157 264 11312277 20042
+313 297 5221405 233
+627 580 3874217 477
+1353 1217 9618888 988
+4826 653 53192338 4563
+1273 1092 6954577 780
+772 633 17679268 439
+681 582 13321056 443
+491 452 5348679 336
+112 104 2032605 68
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0
+0
+0
+5972
+42
+0
+0
+0
+0
+0
+0
+18
+9
+0
+201
+0
+0
+70
+0
+0
+15
+24220
+2
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+189
+0
+0
+0
+0
+0
+# -urls- 
+/app/controllers/associateController.js
+0 2 0 2526 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getTemelAlanBilgisiV1/22990099932
+0 8 0 12200 0 0
+/app/controllers/homeController.js
+0 2 0 178 0 0
+/laravel-jwt/public/users
+0 203 0 45997 0 5
+/laravel-jwt/public/Yoksis/TcKimlikNoileOgrenciSorgulaDetayv4/TcKimlikNoileOgrenciSorgulaDetayv4/29453332292
+0 4 0 7202 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirDersListesi/40888959618
+0 1 0 92 0 0
+/laravel-jwt/public/api/login
+0 4 0 2942 1 0
+/laravel-jwt/public/api/KPS/KimlikNoSorgulaAdresServis/1
+0 1 0 473 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getSanatsalFaalV1/40888959618
+0 1 0 98 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirOgrenimBilgisiListesi/41242414552
+0 17 0 57766 0 0
+/laravel-jwt/public/OSYM/BilgiServisi/SinavGrupBilgileriniGetir
+0 16 0 3291 1 1
+/app/views/users.html
+0 2 20733328 17900 0 0
+/laravel-jwt/public/record/service/osym
+0 4 0 381 0 0
+/api/DETSIS/DETSISServis/AnaKurumlariGetirKurumBirimWs
+0 1 20735216 3010659 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirOgrenimBilgisiListesi/40888959618
+0 1 0 102 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirDersListesi/41242414552
+0 17 0 1564 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirAtifSayilari/2015/41242414552
+0 4 0 384 0 0
+/laravel-jwt/public/record/2
+0 28 0 8289 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getOdulListesiV1/22990099932
+0 8 0 16792 0 0
+/laravel-jwt/public/OSYM/BilgiServisi/DetsisIslemYetkilisiBilgileriWs
+0 1 0 25 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getMakaleBilgisiV1/22990099932/2019-03-07
+0 1 0 92 0 0
+/app/app.js
+0 566 0 3005798 0 0
+/app/
+0 865 0 2207471 12 2
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getOdulListesiV1/41242414552
+0 17 0 1564 0 0
+/laravel-jwt/public/AngularJS/js/loading-bar.min.js
+0 4 0 14000 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirYabanciDilListesi/41242414552
+0 4 0 392 0 0
+/api/user/all
+0 15 20731888 11820 0 0
+/laravel-jwt/public/api/Yoksis/UniversiteBirimlerv4/TarihtenBirimDegisiklikGetirv4/122082
+0 4 0 962 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirAtifSayilari/22990099932
+0 2 0 44 0 0
+/api/record/all
+0 12 20732224 168 0 0
+/api/
+0 133 20693696 459929 0 0
+/laravel-jwt/public/OSYM/BilgiServisi/SinavSonuclariGetir/41242414552/2013/3
+0 9 0 890 0 1
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirAtifSayilari/2017/41242414552
+0 4 0 384 0 0
+/api/yoksis
+0 21 20735504 183788 0 1
+/api/DETSIS/DETSISServis/AktifKEPAdresleriniGetir
+0 1 20735072 869199 0 0
+/api/OSYM/BilgiServisi/SinavSonucHtml/41242414552/2013
+0 4 20735360 353 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getTasarimBilgisiV1/41242414552
+0 4 0 372 0 0
+/laravel-jwt/public/record/user/2
+0 3 0 1343 0 0
+/laravel-jwt/public/record/user/1
+0 2 0 43 0 0
+/api/osym
+0 14 20734176 67336 0 0
+/app/controllers/tokensManagerController.js
+0 2 0 1404 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirProjeListesi/22990099932
+0 8 0 70576 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getPatentBilgisiV1/40888959618
+0 1 0 92 0 0
+/app/services/tokensManagerService.js
+0 2 0 1588 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirIdariGorevListesi/22990099932
+0 8 0 13312 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getKitapBilgisiV1/40888959618
+0 1 0 91 0 0
+/app/content/css/loading-bar.css
+0 12 0 35304 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirAtifSayilari/2018/22990099932
+0 9 0 38520 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getYazarListesiV1/40888959618
+0 1 0 2 0 0
+/laravel-jwt/public/api/KPS/BilesikKutukSorgulaKimlikNoServis/1
+0 3 0 98 1 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getBildiriBilgisiV1/41242414552
+0 4 0 372 0 0
+/services/public/assets/bootstrap/dist/js/bootstrap.min.js
+0 4 0 186612 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getMakaleBilgisiV1/22990099932/2018-03-06
+0 2 0 34264 0 0
+/laravel-jwt/public/AngularJS/
+0 14 0 35793 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getTasarimBilgisiV1/22990099932
+0 8 0 744 0 0
+/api/kps
+0 51 20733680 242782 0 0
+/app/views/records.html
+0 1 20733568 1944 0 0
+/app/js/angular-jwt.js
+0 244 0 3472344 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getMakaleBilgisiV1/22990099932
+0 9 0 698166 0 0
+/laravel-jwt/public/api/Yoksis/UniversiteBirimlerv4/TarihtenBirimDegisiklikGetirv4/01/01/2019
+0 1 0 417 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getMakaleBilgisiV1/41242414552
+0 17 0 1564 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirUyelikListesi/22990099932
+0 10 0 940 0 0
+/laravel-jwt/public/api/Yoksis/UniversiteBirimlerv4
+0 1 0 491 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getEditorlukBilgisiV1/22990099932
+0 8 0 760 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getTasarimBilgisiV1/40888959618
+0 1 0 93 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getHakemlikBilgisiV1/22990099932
+0 8 0 752 0 0
+/app/services/authService.js
+0 2 0 11280 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getHakemlikBilgisiV1/41242414552
+0 4 0 376 0 0
+/laravel-jwt/
+0 2 0 5312 0 0
+/app/favicon.png
+1 188 20732576 511360 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirAtifSayilari/2016/40888959618
+0 1 0 96 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirOgrenimBilgisiListesi/22990099932
+0 8 0 25792 0 0
+/laravel-jwt/public/Yoksis/UniversiteAkademikPersonelv1/kullaniciyaGoreUniversitedeki_Akademik_Personel_Bilgisiv1/41242414552/1
+0 1 0 34153 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getPersonelLinkV1/22990099932
+0 10 0 5990 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirAkademikGorevListesi/22990099932
+0 24 0 47148 2 0
+/laravel-jwt/public/Yoksis/TcKimlikNoileMezunOgrenciSorgulav2/TcKimlikNoilMezunOgrenciSorgulav2/29453332292
+0 2 0 732 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirUnvDisiDeneyimListesi/22990099932
+0 8 0 760 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getKitapBilgisiV1/41242414552
+0 17 0 1547 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getTesvikKatsayi/22990099932
+0 9 0 846 0 2
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getEditorlukBilgisiV1/40888959618
+0 1 0 95 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirAtifSayilari/2016/41242414552
+0 4 0 384 0 0
+/laravel-jwt/public/record/search/osym
+0 3 0 1995 0 0
+/app/content/css/font-awesome.min.css
+0 12 0 249192 0 0
+/laravel-jwt/public/Yoksis/MEBMezunSorgulav2/mezuniyetVerileriniGetir/29453332292
+0 1 0 29 1 0
+/aaa/api_app_test/app/controllers/serviceController.js
+0 3 20736624 13317 0 0
+/aaa/api_app_test/app/
+0 3 20735856 9048 0 0
+/laravel-jwt/public/DETSIS/DETSISServis/DetsisIslemYetkilisiBilgileriWs
+0 1 0 574 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirAtifSayilari/2016/22990099932
+0 8 0 21256 0 0
+/laravel-jwt/public/record/user/3
+0 1 0 1058075 0 0
+/laravel-jwt/public/AngularJS/login.html
+0 3 0 7860 0 0
+/aaa/api_app_test/app/controllers/loginController.js
+0 3 20737056 3594 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirTezDanismanListesi/22990099932
+0 16 0 162912 0 0
+/api/DETSIS/DETSISServis/DetsisIslemYetkilisiBilgileriWs
+0 1 0 574 0 0
+/aaa/api_app_test/app/views/users.html
+0 2 20737328 17900 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirTezDanismanListesi/41242414552
+0 4 0 396 0 0
+/test/
+0 136 0 239882 1 2
+/services/public/register
+0 2 0 11822 0 1
+/aaa/api_app_test/api/login
+0 1 20735616 403 1 0
+/aaa/api_app_test/app/controllers/userController.js
+0 3 20736480 13107 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getArastirmaSertifkaBilgisiV1/40888959618
+0 1 0 95 0 0
+/services/public/css/custom.css
+0 6 0 119454 0 0
+/app/views/signup.html
+0 4 0 2928 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getYazarListesiV1/22990099932
+0 9 0 18 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getMakaleBilgisiV1/2019-03-06/22990099932
+0 1 0 1316 0 0
+/app/controllers/serviceController.js
+0 6 20732816 26634 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getYazarListesiV1/41242414552
+0 4 0 8 0 0
+/app/controllers/ordersController.js
+0 2 0 626 0 0
+/laravel-jwt/public/api/Yoksis/UniversiteBirimlerv4/UniversiteleriGetirv4/1
+0 5 0 1094260 0 0
+/laravel-jwt/public/Yoksis/UniversiteAkademikPersonelv1/getMernisUyruk/41242414552/41242414552
+0 1 0 26194 0 0
+/app/services/recordService.js
+0 6 20733200 1518 0 0
+/laravel-jwt/public/Yoksis/mebmezunsorgulav2/mezuniyetVerileriniGetir/29453332292
+0 1 0 29 0 0
+/app/controllers/signupController.js
+0 2 0 2484 0 0
+/laravel-jwt/public/record/search/link
+0 1 0 2680188 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getMakaleBilgisiV1/22990099932/2019-03-06
+0 2 0 2632 0 0
+/laravel-jwt/public/AngularJS/js/angular-jwt.js
+0 4 0 57596 0 0
+/laravel-jwt/public/Yoksis/UniversiteAkademikPersonelv1/kullaniciyaGoreTcKimlikNodan_Akademik_Personel_Bilgisiv1/41242414552/41242414552
+0 2 0 368 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getSanatsalFaalV1/22990099932
+0 8 0 784 0 0
+/laravel-jwt/public/
+0 14 0 38284 1 1
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirAkademikGorevListesi/41242414552
+0 38 0 2717 0 0
+/laravel-jwt/public/service/delete
+0 1 0 29 0 0
+/api/record/user/2
+0 1 20732000 14 0 0
+/laravel-jwt/public/api/Yoksis/UniversiteBirimlerv4/TarihtenBirimDegisiklikGetirv4/01/01/2018
+0 1 0 309 0 0
+/api/service/all
+0 12 20732336 11388 0 0
+/laravel-jwt/public/api/KPS/BilesikKutukSorgulaKimlikNoServis/41242414552
+0 10 0 24383 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirBeyanTesvik/41242414552
+0 2 0 4 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirIdariGorevListesi/41242414552
+0 17 0 1666 0 0
+/laravel-jwt/public/KPS/BilesikKutukSorgulaKimlikNoServis/41242414552
+0 4 0 5550 0 0
+/laravel-jwt/public/user/all
+0 375 0 139762 0 0
+/api/record/service/yoksis
+0 1 20732448 14 0 0
+/api/DETSIS/DETSISServis/AdaGoreKurumBirimSorgulaWs/ondokuz/78633602
+0 1 0 1331 0 0
+/app/content/css/bootstrap.min.css
+0 12 0 1273536 0 0
+/app/content/fonts/fontawesome-webfont.woff
+0 1 0 83760 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirUyelikListesi/41242414552
+0 4 0 376 0 0
+/app/partial-about.html
+0 8 0 2160 0 0
+/app/controllers/indexController.js
+0 2 0 600 0 0
+/app/css/loading-bar.min.css
+0 608 0 1359488 0 0
+/api/login
+0 29 20693808 11557 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getOdulListesiV1/40888959618
+0 1 0 92 0 0
+/laravel-jwt/public/open
+0 1 0 87 0 0
+/laravel-jwt/public/api/KPS/KimlikNoSorgulaAdresServis/41242414552
+0 4 0 5534 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirAkademikGorevListesi/40888959618
+0 2 0 143 0 0
+/aaa/api_app_test/app/services/recordService.js
+0 3 20736336 759 0 0
+/api/KPS/BilesikKutukSorgulaKimlikNoServis/41242414552
+0 1 20734032 3921 0 0
+/laravel-jwt/public/DETSIS/DETSISServis/KurumBirimIletisimBilgileriGetirWs/78633602
+0 1 0 623 0 0
+/aaa/api_app_test/app/js/angular-jwt.js
+0 3 20735968 43542 0 0
+/api/record/user/3
+0 2 20732112 28 0 0
+/laravel-jwt/public/AngularJS/app.js
+0 4 0 21915 0 0
+/laravel-jwt/public/api/Yoksis/UniversiteBirimlerv4/AltBirimleriGetirv4
+0 5 0 237002 0 0
+/laravel-jwt/public/api/Yoksis/UniversiteBirimlerv4/AltBirimleriGetirv4/121946
+0 4 0 236258 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getArastirmaSertifkaBilgisiV1/22990099932
+0 8 0 760 0 0
+/laravel-jwt/public/DETSIS/DETSISServis/TumTip1KodlariGetirWs
+0 9 0 68838 0 0
+/laravel-jwt/public/record/1
+0 3 0 42 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getMakaleBilgisiV1/2018-03-06/22990099932
+0 1 0 17132 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirDersListesi/22990099932
+0 8 0 736 0 0
+/app/views/services.html
+0 1 20733440 9249 0 0
+/app/scripts/loading-bar.min.js
+0 2 0 4872 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirAtifSayilari/2018/41242414552
+0 4 0 384 0 0
+/app/content/css/site.css
+0 12 0 13548 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getEditorlukBilgisiV1/41242414552
+0 17 0 1615 0 0
+/aaa/api_app_test/app/views/services.html
+0 3 20737456 27747 0 0
+/app/js/loading-bar.min.js
+0 223 0 780500 0 0
+/laravel-jwt/public/AngularJS/css/loading-bar.min.css
+0 13 0 29068 0 0
+/laravel-jwt/public/DETSIS/DETSISServis/AktifKEPAdresleriniGetir
+0 1 0 873817 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirAtifSayilari/2017/40888959618
+0 1 0 96 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirIdariGorevListesi/40888959618
+0 1 0 98 0 0
+/laravel-jwt/public/login
+0 160 0 72768 6 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirBeyanTesvik/22990099932
+0 8 0 16 0 0
+/laravel-jwt/public/Yoksis/UniversiteAkademikPersonelv1/kullaniciyaGoreUniversiteki_Akademik_Personel_SayfaSayisiv1/41242414552/41242414552
+0 1 0 78 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getTesvikKatsayi/41242414552
+0 2 0 188 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirAtifSayilari/2019/22990099932
+0 1 0 96 0 0
+/aaa/api_app_test/app/controllers/logoutController.js
+0 3 20736912 603 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirProjeListesi/40888959618
+0 1 0 93 0 0
+/app/login.html
+0 132 0 327148 0 3
+/app/controllers/refreshController.js
+0 2 0 1106 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirYabanciDilListesi/22990099932
+0 10 0 3770 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getMakaleBilgisiV1/40888959618
+0 1 0 92 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirAtifSayilari/2015/22990099932
+0 8 0 13640 0 0
+/laravel-jwt/public/app/app.component.html
+0 2 0 452 0 0
+/laravel-jwt/public/api/Yoksis/UniversiteBirimlerv4/UniversiteleriGetirv4
+0 13 0 2189525 0 0
+/laravel-jwt/public/Yoksis/TcKimlikNoileOgrenciSorgulaDetayv4/TcKimlikNoileOgrenciSorgulaDetayv4/41242414552
+0 1 0 42 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirBasvuruDurum/22990099932
+0 7 0 14 0 0
+/app/content/css/social-buttons.css
+0 12 0 283644 0 0
+/laravel-jwt/public/Yoksis/UniversiteAkademikPersonelv1/41242414552
+0 1 0 29 0 0
+/app/controllers/userController.js
+0 6 20732688 26214 0 0
+/app/login
+0 5 0 12150 0 0
+/app/controllers/logoutController.js
+0 6 20733072 1206 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirUyelikListesi/40888959618
+0 1 0 94 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirYabanciDilListesi/40888959618
+0 1 0 1526 0 0
+/app/controllers/loginController.js
+0 8 0 10933 0 0
+/laravel-jwt/public/api/Yoksis/UniversiteBirimlerv4/IDdenBirimAdiGetirv4/122082
+0 2 0 2200 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getPatentBilgisiV1/22990099932
+0 8 0 736 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getPersonelLinkV1/41242414552
+0 87 0 25644 0 0
+/laravel-jwt/public/api/Yoksis/UniversiteBirimlerv4/TarihtenBirimDegisiklikGetirv4/01/09/2018
+0 1 0 76113 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirProjeListesi/41242414552
+0 4 0 372 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getBildiriBilgisiV1/40888959618
+0 1 0 93 0 0
+/app/services/authInterceptorService.js
+0 2 0 2470 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirAtifSayilari/2015/40888959618
+0 1 0 96 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getTemelAlanBilgisiV1/40888959618
+0 1 0 95 0 0
+/api/KPS/KimlikNoSorgulaAdresServis/41242414552
+0 1 20733792 1835 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirTezDanismanListesi/40888959618
+0 1 0 99 0 0
+/services/public/login
+0 4 0 20288 0 0
+/laravel-jwt/public/record/search/13:41
+0 2 0 353 0 0
+/app/services.html
+0 117 0 870624 0 0
+/laravel-jwt/public/Yoksis/mebmezunsorgulav2/mezuniyetVerileriniGetir/41242414552
+0 2 0 587 0 0
+/services/public/assets/bootstrap/dist/css/bootstrap.min.css
+0 6 0 905976 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirAtifSayilari/2018/40888959618
+0 1 0 96 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getTemelAlanBilgisiV1/41242414552
+0 4 0 380 0 0
+/app/controllers/recordController.js
+0 6 20732944 11328 0 0
+/api/OSYM/BilgiServisi/SinavGrupBilgileriniGetir
+0 1 20734288 281 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirAtifSayilari/22990099932/2018
+0 2 0 8560 0 0
+/app/users.html
+0 495 0 3552830 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirUnvDisiDeneyimListesi/40888959618
+0 1 0 95 0 0
+/test/test.php
+0 1 0 90338 0 0
+/aaa/api_app_test/app/views/login.html
+0 1 20737200 2430 0 0
+/laravel-jwt/public/api/Yoksis/UniversiteBirimlerv4/AltBirimdekiProgramlariGetirv4/122082
+0 3 0 183425 0 1
+/app/views/login.html
+0 9 0 12470 0 0
+/app/scripts/angular-local-storage.min.js
+0 2 0 9030 0 0
+/laravel-jwt/public/user
+0 6 0 584 0 0
+/laravel-jwt/public/Yoksis/UniversiteAkademikPersonelv1/kullaniciyaGoreTcKimlikNodan_Akademik_Personel_Bilgisiv1/41242414552
+0 1 0 184 0 0
+/laravel-jwt/public/service/all
+0 130 0 86263 0 4
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getPatentBilgisiV1/41242414552
+0 4 0 368 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getHakemlikBilgisiV1/40888959618
+0 1 0 94 0 0
+/api/public/
+0 3 20725200 7092 0 0
+/app/services/ordersService.js
+0 2 0 908 0 0
+/aaa/api_app_test/app/controllers/recordController.js
+0 3 20736768 5664 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getKitapBilgisiV1/22990099932
+0 8 0 728 0 0
+/laravel-jwt/public/record/search/osym1
+0 3 0 42 0 0
+/laravel-jwt/public/OSYM/BilgiServisi/SinavSonucHtml/41242414552/2013
+0 60 0 4195 0 2
+/app/records.html
+0 115 0 186867 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirAtifSayilari/2017/22990099932
+0 8 0 18792 0 0
+/api/detsis
+0 13 20734528 69801 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getirUnvDisiDeneyimListesi/41242414552
+0 17 0 1615 0 0
+/laravel-jwt/public/record/all
+0 133 0 3874962 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getSanatsalFaalV1/41242414552
+0 4 0 392 0 0
+/laravel-jwt/public/Yoksis/UniversiteAkademikPersonelv1/kullaniciyaGoreUniversitedeki_Akademik_Personel_Bilgisiv1/41242414552/41242414552
+0 1 0 81 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getPersonelLinkV1/40888959618
+0 1 0 504 0 0
+/laravel-jwt/public/KPS/KimlikNoSorgulaAdresServis/41242414552
+0 2 0 1864 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getArastirmaSertifkaBilgisiV1/41242414552
+0 17 0 1615 0 0
+/aaa/api_app_test/app/app.js
+0 3 20736208 3759 0 0
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getBildiriBilgisiV1/22990099932
+0 8 0 948568 0 0
+/laravel-jwt/public/me
+0 4 0 1240 0 0
+# End Of Table - urls
+# -sites- (monthly)
+10.50.1.35
+0 29971 5224 130654768 27 1555344675
+/api/service/all
+28-34-b.omu.edu.tr
+0 739 730 3104945 4 1555067286
+/laravel-jwt/public/Yoksis/Ozgecmisv1/getTesvikKatsayi/22990099932
+192.168.33.135
+0 28 18 1662847 2 1554742445
+/services/public/login
+# End Of Table - sites (monthly)
+# -sites- (daily)
+10.50.1.35
+0 20605 700 12545566 2 1555344675
+/api/service/all
+# End Of Table - sites (daily)
+# -referrers- 
+https://omuservices.omu.edu.tr/app/
+0 22879
+https://omuservices.omu.edu.tr/laravel-jwt/public/AngularJS/index.html
+0 4085
+https://omuservices.omu.edu.tr/aaa/api_app_test/app/
+0 39
+https://omuservices.omu.edu.tr/services/public/login
+0 15
+https://omuservices.omu.edu.tr/api/yoksis
+0 37
+https://omuservices.omu.edu.tr/api/osym
+0 16
+https://omuservices.omu.edu.tr/laravel-jwt/public/index.html
+0 10
+- (Direct Request)
+0 2012
+https://omuservices.omu.edu.tr/app/index.html
+0 1248
+https://omuservices.omu.edu.tr/laravel-jwt/public/
+0 21
+https://omuservices.omu.edu.tr/test/
+0 2
+https://omuservices.omu.edu.tr/api/kps
+0 70
+https://omuservices.omu.edu.tr/api/
+0 254
+https://omuservices.omu.edu.tr/app/login
+0 3
+https://omuservices.omu.edu.tr/laravel-jwt/public/login
+0 1
+https://omuservices.omu.edu.tr/services/public/register
+0 5
+https://omuservices.omu.edu.tr/test/test.php
+0 1
+https://omuservices.omu.edu.tr/
+0 3
+https://omuservices.omu.edu.tr/laravel-jwt/index.html
+0 14
+https://omuservices.omu.edu.tr/api/detsis
+0 22
+https://omuservices.omu.edu.tr/app/content/css/font-awesome.min.css
+0 1
+# End Of Table - referrers
+# -agents- 
+GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.17
+0 739
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+0 8908
+PostmanRuntime/7.6.1
+0 430
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+0 28
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36
+0 20633
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames
