@@ -6,25 +6,19 @@ routerApp.controller("loginController", function ($rootScope, $scope, $http, $st
 		if(Users){
 			
 			myobject = { 'email': Users.email, 'password': Users.password };
-
-			Object.toparams = function ObjecttoParams(obj) {
-				var p = [];
-				for (var key in obj) {
-					p.push(key + '=' + encodeURIComponent(obj[key]));
-				}
-				return p.join('&');
-			};
-
+			console.log(myobject);
 			return $http({
 				method: 'POST',
 				headers: {
-					'Content-Type': 'application/x-www-form-urlencoded'
+					"content-type": "application/json",
+                    "accept": "application/json"
 				},
 				url: $rootScope.serviceBaseURL + 'login',
-				data: Object.toparams(myobject)
+				data: myobject
 			}).success(function (data, status) {	
 			
 				tokenPayload = jwtHelper.decodeToken(data.token);
+				console.log(tokenPayload);
 				if (tokenPayload.role.indexOf('admin') !== -1) {
 					$rootScope.isAdmin = 1;
 					$window.localStorage.setItem('token', data.token);

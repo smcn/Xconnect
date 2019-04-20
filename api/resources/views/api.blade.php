@@ -45,21 +45,14 @@ function getJWTToken() {
 <xmp>
 myobject = { 'email': Users.email, 'password': Users.password };
 
-Object.toparams = function ObjecttoParams(obj) {
-	var p = [];
-	for (var key in obj) {
-		p.push(key + '=' + encodeURIComponent(obj[key]));
-	}
-	return p.join('&');
-};
-
 return $http({
 	method: 'POST',
 	headers: {
-		'Content-Type': 'application/x-www-form-urlencoded'
+		"content-type": "application/json",
+		"accept": "application/json"
 	},
 	url: $rootScope.serviceBaseURL + 'login',
-	data: Object.toparams(myobject)
+	data: myobject
 }).success(function (data, status) {	
 	tokenPayload = jwtHelper.decodeToken(data.token);
 	$window.localStorage.setItem('token', data.token);

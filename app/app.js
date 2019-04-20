@@ -4,11 +4,6 @@ var routerApp = angular.module('routerApp', ['ui.router', 'angular-jwt', 'angula
 routerApp.run(function ($rootScope) {
 	$rootScope.isAdmin = 0;
 	$rootScope.serviceBaseURL = "https://omuservices.omu.edu.tr/api/";
-	
-	$rootScope.myGlobalFunction = function () {
-		$window.alert('I am global function. :)');
-		console.log("I am global function. :)");
-	};
 });
 
 routerApp.config(function ($stateProvider, $urlRouterProvider) {

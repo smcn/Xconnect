@@ -56,8 +56,8 @@ Route::group(['middleware' => 'jwt.verify', 'role' => 'yoksis'], function() {
 	Route::get('Yoksis/Ozgecmisv1/{method}/{date}/{id}', 'YoksisController@Ozgecmisv1');
 	
 	//UniversiteAkademikPersonelv1
+	Route::get('Yoksis/UniversiteAkademikPersonelv1/{method}', 'YoksisController@UniversiteAkademikPersonelv1');
 	Route::get('Yoksis/UniversiteAkademikPersonelv1/{method}/{id}', 'YoksisController@UniversiteAkademikPersonelv1');
-	Route::get('Yoksis/UniversiteAkademikPersonelv1/{method}/{id}/{page}', 'YoksisController@UniversiteAkademikPersonelv1');
 	
 	//TcKimlikNoileMezunOgrenciSorgulav2	
 	Route::get('Yoksis/TcKimlikNoileMezunOgrenciSorgulav2/{method}/{id}', 'YoksisController@TcKimlikNoileMezunOgrenciSorgulav2');
@@ -67,6 +67,15 @@ Route::group(['middleware' => 'jwt.verify', 'role' => 'yoksis'], function() {
 	
 	//mebmezunsorgulav2 
 	Route::get('Yoksis/MEBMezunSorgulav2/{method}/{id}', 'YoksisController@MEBMezunSorgulav2');
+	
+	//Referanslarv1 
+	Route::get('Yoksis/Referanslarv1/{method}', 'YoksisController@Referanslarv1');  
+	
+	//TcKimlikNoileTezSorgula 
+	Route::get('Yoksis/TcKimlikNoileTezSorgula/{method}/{id}/{date}/{tid}', 'YoksisController@TcKimlikNoileTezSorgula');
+	
+	//ozgecmisBapv1
+	Route::get('Yoksis/ozgecmisBapv1/{method}/{id}', 'YoksisController@ozgecmisBapv1');
 	
 });
 
@@ -86,6 +95,11 @@ Route::group(['middleware' => 'jwt.verify', 'role' => 'detsis'], function() {
 	Route::get('DETSIS/DETSISServis/{method}/{search}/{id}', 'DETSISController@DETSISServis');
 });
 
+//PersonelWEB Roles
+Route::group(['middleware' => 'cors'], function() {
+	Route::get('PersonelWEB/{dil}/{fakulte}/{bolum}/{anabilimdali}', 'PersonelWEBController@getAll');  
+	Route::get('ProgramWEB/{dil}/{mod}/{program}', 'ProgramWEBController@getAll');
+});
 
 
 

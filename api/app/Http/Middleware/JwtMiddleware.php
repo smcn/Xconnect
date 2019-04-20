@@ -8,20 +8,6 @@ use Exception;
 use Tymon\JWTAuth\Http\Middleware\BaseMiddleware;
 use App\Record;
 
-///class JwtMiddleware
-///{
-    /**
-     * Handle an incoming request.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure  $next
-     * @return mixed
-     */
-    ///public function handle($request, Closure $next)
-    ///{
-        ///return $next($request);
-    ///}
-///}
 class JwtMiddleware extends BaseMiddleware
 {
 	
@@ -45,7 +31,7 @@ class JwtMiddleware extends BaseMiddleware
 							'response' => json_encode($response->original),
 						]);
 				}
-				return $response;//$next($request);
+				return $response;
 			}
 
 		} catch (Exception $e) {

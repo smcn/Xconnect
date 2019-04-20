@@ -82,14 +82,15 @@ getTesvikKatsayi/{id}
 						
 						<div class="card border-primary">
 							<div class="card-body">		
-								<h4 class="card-title">GET https://localhost/api/Yoksis/UniversiteAkademikPersonelv1/{method}/{id}</h4> 
-								<h4 class="card-title">GET https://localhost/api/Yoksis/UniversiteAkademikPersonelv1/{method}/{id}/{id2 | page}</h4>
+								<h4 class="card-title">GET https://localhost/api/Yoksis/UniversiteAkademikPersonelv1/{method}</h4> 
+								<h4 class="card-title">GET https://localhost/api/Yoksis/UniversiteAkademikPersonelv1/{method}/{id | page}</h4>
 								<hr />
 								<big><big>
-									<footer class="blockquote-footer">{method}: <cite title="Source Title">Kullanılabilir metodlar</cite></footer>
-									<footer class="blockquote-footer">{id}: <cite title="Source Title">SORGULAYAN_TC_KIMLIK_NO</cite></footer>
-									<footer class="blockquote-footer">{id2}: <cite title="Source Title">AKPER_TC_KIMLIK_NO</cite></footer>
-									<footer class="blockquote-footer">{page}: <cite title="Source Title">kullaniciyaGoreUniversiteki_Akademik_Personel_SayfaSayisiv1 metodu ile gelen sayfa bilgisi</cite></footer>
+									<footer class="blockquote-footer">{method}: <cite title="Source Title">Kullanılabilir metodlar...</cite></footer>
+									<footer class="blockquote-footer">{id}: <cite title="Source Title">AKPER_TC_KIMLIK_NO</cite></footer>
+									<footer class="blockquote-footer">{page}: <cite title="Source Title">kullaniciyaGoreUniversiteki_Akademik_Personel_SayfaSayisiv1 metodu ile gelen sayfa bilgisi...</cite></footer>
+									
+									<footer class="blockquote-footer">SORGULAYAN_TC_KIMLIK_NO: <cite title="Source Title">User tablosundaki account bilgisi...</cite></footer>
 								</big></big>
 								</div>
 						</div>

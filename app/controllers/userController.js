@@ -4,6 +4,12 @@ routerApp.controller("userController", function ($rootScope, $scope, $http, $sta
     
 	var errorMgs = ["Token is Invalid", "Token is Expired", "Authorization Token not found", "User not found", "Unauthorized", "Record table write error"];
 	
+	headers1= {
+					"authorization": "Bearer " + $window.localStorage.getItem('token'),
+					"content-type": "application/json",
+					"accept": "application/json"
+				};
+	console.log(headers1);
     $http({
         method: 'GET',
         headers: {
