@@ -61,6 +61,12 @@
 		…
 ```
 
+### Servisler İçin Yardım Sayfaları
+https://site-adi/api
+
+### Admin Arayüzü
+https://site-adi/app
+
 #### /test
 ```
 #cd ../test
@@ -80,9 +86,3 @@
 		…
 #php OSYMozGecmis.php
 ```
-
-### Servisler İçin Yardım Sayfaları
-https://site-adi/api
-
-### Admin Arayüzü
-https://site-adi/app
