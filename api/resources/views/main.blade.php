@@ -15,10 +15,10 @@
 	<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
         <div class="container">
             <a href="./" class="navbar-brand">API Yardım</a>
-            <button class="navbar-toggler" type="button">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="kps" class="nav-link">KPS</a>
@@ -40,7 +40,7 @@
     </div>
 	
 	<div class="container">
-		<div class="bs-docs-section">
+		<div class="bs-docs-section" style="margin-top: -3em;">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="bs-component">
@@ -63,7 +63,7 @@
 	</div>
 	
 	
-			
-	
+<script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+<script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>	
 </body>
 </html>

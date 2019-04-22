@@ -6,7 +6,6 @@ routerApp.controller("loginController", function ($rootScope, $scope, $http, $st
 		if(Users){
 			
 			myobject = { 'email': Users.email, 'password': Users.password };
-			console.log(myobject);
 			return $http({
 				method: 'POST',
 				headers: {
@@ -16,23 +15,19 @@ routerApp.controller("loginController", function ($rootScope, $scope, $http, $st
 				url: $rootScope.serviceBaseURL + 'login',
 				data: myobject
 			}).success(function (data, status) {	
-			
-				tokenPayload = jwtHelper.decodeToken(data.token);
-				console.log(tokenPayload);
-				if (tokenPayload.role.indexOf('admin') !== -1) {
+				if (data.token) {
 					$rootScope.isAdmin = 1;
 					$window.localStorage.setItem('token', data.token);
 					$state.go("users");
 				} else {
 					$rootScope.isAdmin = 0;
-				}
-				
-			}).error(function (data, status, headers, config) {
-				//console.log("Hata: " + JSON.stringify({ data: data }));
-				if(status == 400){
 					$scope.msg = data['status'];
 					$scope.status = status;
 				}
+				
+			}).error(function (data, status) {
+				$scope.msg = data['status'];
+				$scope.status = status;
 			});
         }
     }

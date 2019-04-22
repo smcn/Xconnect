@@ -77,6 +77,9 @@ Route::group(['middleware' => 'jwt.verify', 'role' => 'yoksis'], function() {
 	//ozgecmisBapv1
 	Route::get('Yoksis/ozgecmisBapv1/{method}/{id}', 'YoksisController@ozgecmisBapv1');
 	
+	//yökdil
+	Route::get('Yoksis/yokdil/test', 'YoksisController@yokdil');
+	
 });
 
 //ÖSYM Roles
@@ -95,17 +98,9 @@ Route::group(['middleware' => 'jwt.verify', 'role' => 'detsis'], function() {
 	Route::get('DETSIS/DETSISServis/{method}/{search}/{id}', 'DETSISController@DETSISServis');
 });
 
-//PersonelWEB Roles
+//BirimWEB Route
 Route::group(['middleware' => 'cors'], function() {
 	Route::get('PersonelWEB/{dil}/{fakulte}/{bolum}/{anabilimdali}', 'PersonelWEBController@getAll');  
 	Route::get('ProgramWEB/{dil}/{mod}/{program}', 'ProgramWEBController@getAll');
 });
-
-
-
-
-
-
-
-
 

@@ -13,7 +13,6 @@ routerApp.controller("serviceController", function ($rootScope, $scope, $http, $
         },
         url: $rootScope.serviceBaseURL + 'service/all'
     }).success(function (data) {
-        //console.log(data);
 		if( errorMgs.indexOf(data['status']) !== -1 ){
 			$rootScope.isAdmin = 0;
 			$scope.msg = data['status'];
@@ -32,8 +31,6 @@ routerApp.controller("serviceController", function ($rootScope, $scope, $http, $
     $scope.addService = function () {
         if ($scope.newService.name && $scope.newService.account && $scope.newService.password && $scope.newService.description) {
             
-            console.log($scope.newService);
-           
             return $http({
                 method: 'POST',
                 headers: {
@@ -45,22 +42,18 @@ routerApp.controller("serviceController", function ($rootScope, $scope, $http, $
                 data: $scope.newService
             }).success(function (data) {
                                                
-                console.log(data);
 				$scope.services.push(data.service);
                
             }).error(function (data, status) {
                 $scope.msg = data;
 				$scope.status = status;
             });
-			console.log('11');
         }
     };
 	
 	$scope.updateService = function ($items) {
         if ($items.id && $items.account && $items.password && $items.description) {
-            
-            console.log($items);
-         
+          
             return $http({
                 method: 'PUT',
                 headers: {
@@ -72,7 +65,7 @@ routerApp.controller("serviceController", function ($rootScope, $scope, $http, $
                 data: $items
             }).success(function (data) {
                                                
-                console.log(data);
+                //console.log(data);
 
             }).error(function (data, status) {
                 $scope.msg = data;
@@ -98,7 +91,7 @@ routerApp.controller("serviceController", function ($rootScope, $scope, $http, $
                 data: { "id":id }
             }).success(function (data) {
                                                
-                console.log(data);
+                //console.log(data);
 
             }).error(function (data, status) {
                 $scope.msg = data;
@@ -108,7 +101,7 @@ routerApp.controller("serviceController", function ($rootScope, $scope, $http, $
     };
 	
 	$scope.getServiceRecords = function (id) {
-		console.log(id);
+		
         if (id) {
            
             return $http({
@@ -128,7 +121,6 @@ routerApp.controller("serviceController", function ($rootScope, $scope, $http, $
 				}else{
 					$rootScope.isAdmin = 1;
 					recordService.setTemp(data['records']);
-					console.log(data['records']);
 					$state.go("records");
 				}
 				

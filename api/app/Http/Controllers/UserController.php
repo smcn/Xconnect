@@ -18,8 +18,8 @@ class UserController extends Controller
 			if (! $token = JWTAuth::attempt($credentials) ) {
 				return response()->json(['status' => 'Invalid Credentials']);
 			}else{
-				$payload = JWTAuth::setToken($token)->getPayload();
-				if ($payload['active'] !== 1 ) {
+				$user = JWTAuth::setToken($token)->authenticate();
+				if ($user['active'] !== 1 ) {
 					return response()->json(['status' => 'User is passive']);
 				}
 			}

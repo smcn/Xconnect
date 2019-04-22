@@ -1,16 +1,6 @@
 <?php
 require 'vendor/autoload.php';
 
-/*
-# Send an asynchronous request.
-$request = new \GuzzleHttp\Psr7\Request('GET', 'http://httpbin.org');
-$promise = $client->sendAsync($request)->then(function ($response) {
-    echo 'I completed! ' . $response->getBody();
-});
-
-$promise->wait();
-*/
-
 class Test {
 	
 	private $client;
@@ -20,7 +10,7 @@ class Test {
 	private $email = 'yoksis@omu.edu.tr';
 	private $password = 'secret';
 	private $serviceBaseURL  = 'https://omuservices.omu.edu.tr/api/';
-	private $errorMgs = ["Token is Invalid", "Token is Expired", "Authorization Token not found", "User not found"];
+	private $errorMgs = ["User not found", "Unauthorized", "Token is Invalid", "Token is Expired", "Authorization Token not found", "Record table write error"];
 	
 	function __construct() {
 		

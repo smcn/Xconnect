@@ -170,12 +170,17 @@ class YoksisController extends Controller
 	}
 	//TcKimlikNoileOgrenciSorgulaDetayv4
 	
-	///////HATALI
+	///////şu an çalışmıyor
 	public function MEBMezunSorgulav2(Request $request){
 		
 		$service = Service::where('name', $request->route()->getAction('role'))->get();
 		
-		$client = new \SoapClient("https://servisler.yok.gov.tr/ws/mebmezunsorgulav2?WSDL");		
+		$account = array(
+			 'login' => $service[0]['account2'],
+			 'password' => $service[0]['password2']
+		);
+		
+		$client = new \SoapClient("https://servisler.yok.gov.tr/ws/mebmezunsorgulav2?WSDL", $account);		
 		try {
 			$method = $request->route('method');
 			$params = array('TC_KIMLIK_NO'=> $request->route('id'),
@@ -243,7 +248,6 @@ class YoksisController extends Controller
 	getFormasyonAlanlar
 	*/
 	
-	//HATALI
 	public function TcKimlikNoileTezSorgula(Request $request){
 		
 		$service = Service::where('name', $request->route()->getAction('role'))->get();
@@ -295,10 +299,11 @@ class YoksisController extends Controller
 			$params = array(
 								'kontrol' => array(
 									'P_KULLANICI_ID' => $service[0]['account'],
-									'P_SIFRE' => $service[0]['password2'],
+									'P_SIFRE' => $service[0]['password'],
 									'P_TC_KIMLIK_NO' => $user['tckimlikno']
 								),
-								"P_UNV_PROJE_NO" => $request->route('id')
+								"P_UNV_PROJE_NO" => $request->route('id'),
+								"YOK_PROJE_ID" => $request->route('id')
 							);
 			$result = $client->__soapCall($method, array($params));
 			
@@ -308,6 +313,32 @@ class YoksisController extends Controller
 		}
 		
 	}
-	//getBapProjeBilgi
+	//getBapProjeBilgi/P_UNV_PROJE_NO
+	//getBapProjeEkipListe/YOK_PROJE_ID
+	//insertOrUpdateBapProje/P_UNV_PROJE_NO/P_PROJE_ADI/P_PROJE_ALANI/P_PROJE_BAS_TAR/P_PROJE_BIT_TAR/P_OZET/P_ANAHTAR_KELIME/P_BIRIM_ID/P_PARA_BIRIMI/P_BUTCE/P_YOK_PROJE_ID //update
+	//deleteBapProjeOrEkip/P_SILINME_YERI/P_UNV_PROJE_NO/P_PROJE_EKIP_ID
+    //insertOrUpdateBapProjeEkip/P_YOKPROJEID/P_ARASTIRMACI_TIP/P_ARASTIRMACI_TC/P_PROJEDEKI_GOREVI/P_PERSONEL_AD/P_PERSONEL_SOYAD/P_PROJE_EKIP_ID
 	
+	public function yokdil(Request $request){
+		
+		$service = Service::where('name', $request->route()->getAction('role'))->get();
+		
+		$account = array(
+			 'login' => $service[0]['account2'],
+			 'password' => $service[0]['password2']
+		);
+			
+		try {
+			
+			$request_ = Request::create( 'https://servisler.yok.gov.tr/yokdil/OgrencininSinavlariniGetir', 'GET', $account, $cookies = array(), $files = array(), $server = array(), $content = null );
+			$response = Route::dispatch( $request_ );
+			
+			
+			return response()->json($result);
+		}catch (Exception $e){
+			return response()->json(array('success'=>false, 'error'=>"$e->getMessage()"));
+		}
+		
+	}
+	//yokdil/OgrencininSinavlariniGetir
 }

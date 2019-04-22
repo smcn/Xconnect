@@ -13,7 +13,6 @@ routerApp.controller("recordController", function ($rootScope, $scope, $http, $s
 			},
 			url: $rootScope.serviceBaseURL + 'record/all'
 		}).success(function (data, status) {
-			console.log(data);
 			if( errorMgs.indexOf(data['status']) !== -1 ){
 				$rootScope.isAdmin = 0;
 				$scope.msg = data['status'];
@@ -26,7 +25,6 @@ routerApp.controller("recordController", function ($rootScope, $scope, $http, $s
 		}).error(function (data, status) {
 			$scope.msg = data;
 			$scope.status = status;
-			console.log(data);
 		});
 	}else{
 		$rootScope.isAdmin = 1;
@@ -54,7 +52,6 @@ routerApp.controller("recordController", function ($rootScope, $scope, $http, $s
 				}else{
 					$rootScope.isAdmin = 1;
 					$scope.records = data['records'];
-					console.log(data['records']);
 					$state.go("records");
 				}
 				

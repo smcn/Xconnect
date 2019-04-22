@@ -4,12 +4,6 @@ routerApp.controller("userController", function ($rootScope, $scope, $http, $sta
     
 	var errorMgs = ["Token is Invalid", "Token is Expired", "Authorization Token not found", "User not found", "Unauthorized", "Record table write error"];
 	
-	headers1= {
-					"authorization": "Bearer " + $window.localStorage.getItem('token'),
-					"content-type": "application/json",
-					"accept": "application/json"
-				};
-	console.log(headers1);
     $http({
         method: 'GET',
         headers: {
@@ -27,7 +21,6 @@ routerApp.controller("userController", function ($rootScope, $scope, $http, $sta
 		}else{
 			$rootScope.isAdmin = 1;
 			$scope.users = data['users'];
-			console.log(data);
 		}
         
     }).error(function (data, status) {
@@ -40,8 +33,6 @@ routerApp.controller("userController", function ($rootScope, $scope, $http, $sta
         if ($scope.newUser.name && $scope.newUser.email && $scope.newUser.password && $scope.newUser.role) {
             
             $scope.isAddForm = false;
-            console.log($scope.newUser);
-           
             return $http({
                 method: 'POST',
                 headers: {
@@ -66,8 +57,6 @@ routerApp.controller("userController", function ($rootScope, $scope, $http, $sta
 	$scope.updateUser = function ($items) {
         if ($items.id && $items.name && $items.email && $items.password && $items.role && $items.active) {
             
-            console.log($items);
-         
             return $http({
                 method: 'PUT',
                 headers: {
@@ -79,12 +68,11 @@ routerApp.controller("userController", function ($rootScope, $scope, $http, $sta
                 data: $items
             }).success(function (data) {
                                                
-                console.log(data);
+                //console.log(data);
 
             }).error(function (data, status) {
                 $scope.msg = data;
 				$scope.status = status;
-				console.log(data);
             });
 
         }
@@ -106,7 +94,7 @@ routerApp.controller("userController", function ($rootScope, $scope, $http, $sta
                 data: { "id":$id }
             }).success(function (data) {
                                                
-                console.log(data);
+                //console.log(data);
 
             }).error(function (data, status) {
                 $scope.msg = data;
@@ -135,7 +123,6 @@ routerApp.controller("userController", function ($rootScope, $scope, $http, $sta
 				}else{
 					$rootScope.isAdmin = 1;
 					recordService.setTemp(data['records']);
-					//console.log(data['records']);
 					$state.go("records");
 				}
 				

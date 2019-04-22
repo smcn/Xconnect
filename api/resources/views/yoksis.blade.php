@@ -144,6 +144,50 @@ TcKimlikNoileOgrenciSorgulaDetayv4/{id}
 </xmp></p>
 						</div>
 						
+						<div class="card border-primary">
+							<div class="card-body">	
+								<h4 class="card-title">GET https://localhost/api/Yoksis/TcKimlikNoileTezSorgula/{method}/{id}/{date}/{tid}</h4> 
+								<hr />
+								<big><big>
+									<footer class="blockquote-footer">{method}: <cite title="Source Title">Kullanılabilir metodlar</cite></footer>
+									<footer class="blockquote-footer">{id}: <cite title="Source Title">TCKimlikNo</cite></footer>
+									<footer class="blockquote-footer">{date}: <cite title="Source Title">ActionDate</cite></footer>
+									<footer class="blockquote-footer">{tid}: <cite title="Source Title">TransactionId</cite></footer>
+								</big></big>
+							</div>
+						</div>
+						<div class="alert alert-info">
+							<button type="button" class="close" data-dismiss="alert"></button>
+							<h4 class="alert-heading">Metodlar!</h4>
+							<p class="mb-0">
+<xmp> 
+KisiTezSorgulama/{id}/{date}/{tid}
+</xmp></p>
+						</div>
+						
+						<div class="card border-primary">
+							<div class="card-body">	
+								<h4 class="card-title">GET https://localhost/api/Yoksis/ozgecmisBapv1/{method}/{id}</h4> 
+								<hr />
+								<big><big>
+									<footer class="blockquote-footer">{method}: <cite title="Source Title">Kullanılabilir metodlar</cite></footer>
+									<footer class="blockquote-footer">{id}: <cite title="Source Title">P_UNV_PROJE_NO, YOK_PROJE_ID</cite></footer>
+								</big></big>
+							</div>
+						</div>
+						<div class="alert alert-info">
+							<button type="button" class="close" data-dismiss="alert"></button>
+							<h4 class="alert-heading">Metodlar!</h4>
+							<p class="mb-0">
+<xmp> 
+getBapProjeBilgi/P_UNV_PROJE_NO
+getBapProjeEkipListe/YOK_PROJE_ID
+//insertOrUpdateBapProje/P_UNV_PROJE_NO/P_PROJE_ADI/P_PROJE_ALANI/P_PROJE_BAS_TAR/P_PROJE_BIT_TAR/P_OZET/P_ANAHTAR_KELIME/P_BIRIM_ID/P_PARA_BIRIMI/P_BUTCE/P_YOK_PROJE_ID //update
+//deleteBapProjeOrEkip/P_SILINME_YERI/P_UNV_PROJE_NO/P_PROJE_EKIP_ID
+//insertOrUpdateBapProjeEkip/P_YOKPROJEID/P_ARASTIRMACI_TIP/P_ARASTIRMACI_TC/P_PROJEDEKI_GOREVI/P_PERSONEL_AD/P_PERSONEL_SOYAD/P_PROJE_EKIP_ID
+</xmp></p>
+						</div>
+						
 @include('help')						
 	
 						<div class="alert alert-info">
