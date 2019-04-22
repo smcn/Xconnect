@@ -80,8 +80,8 @@ https://site-adi/app
 		$bind = array('');	//TcKimlikNO lar
 		…
 		$db_host = '127.0.0.1';
-		$db_database = ‘osymozgecmis';
-		$db_username = ‘osymozgecmis';
+		$db_database = '';
+		$db_username = '';
 		$db_password = 'secret';
 		…
 #php OSYMozGecmis.php
