@@ -30,7 +30,7 @@
 
 ### Kurulum
 ```
-#git clone https://github.com/smcn/Xconnect.git
+#git clone https://github.com/smcn/Xconnect.git .
 ```
 
 #### /api
